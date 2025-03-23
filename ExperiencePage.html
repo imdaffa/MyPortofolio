@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Experience - Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="logo">
+                <h2>DAFFA<span>.</span></h2>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="AboutMePage.html">About</a>
+                <a href="ExperiencePage.html" class="active">Experience</a>
+                <a href="ResumePage.html">Resume</a>
+                <a href="ContactMePage.html">Contact</a>
+            </div>
+            <div class="menu-btn" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+
+        <!-- Experience Section -->
+        <section class="experience-section">
+            <div class="section-title">
+                <h1>My <span>Portfolio</span></h1>
+                <div class="underline"></div>
+                <p class="section-subtitle">Check out some of my recent projects</p>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-item" onclick="openProjectModal('project1')">
+                    <div class="portfolio-image">
+                        <img src="Assets/FinanceTracker.png" alt="Finance Tracker Project">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Finance Tracker</h3>
+                                <p>Web Development</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-item" onclick="openProjectModal('project2')">
+                    <div class="portfolio-image">
+                        <img src="Assets/CinemaBookTicket.png" alt="Cinema Booking System">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Cinema Booking System</h3>
+                                <p>Python Application</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-item" onclick="openProjectModal('project3')">
+                    <div class="portfolio-image">
+                        <img src="Assets/MsAccessDatabase.png" alt="Database Design">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Database Design</h3>
+                                <p>Microsoft Access</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-item" onclick="openProjectModal('project4')">
+                    <div class="portfolio-image">
+                        <img src="Assets/MentalHealtEdevelop.png" alt="Mental Healthcare Platform">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Mental Healthcare Platform</h3>
+                                <p>Web Development</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="portfolio-item" onclick="openProjectModal('project5')">
+                    <div class="portfolio-image">
+                        <img src="Assets/MySQL.png" alt="Friend Database System">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Friend Database System</h3>
+                                <p>Web Application</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="portfolio-item" onclick="openProjectModal('project6')">
+                    <div class="portfolio-image">
+                        <img src="Assets/Photography.png" alt="Photography">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Photography</h3>
+                                <p>Creative Work</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+    <!-- Project Modals -->
+    <div class="project-modal" id="project1Modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeProjectModal('project1')">&times;</span>
+            <div class="modal-header">
+                <h2>Finance Tracker Application</h2>
+                <div class="modal-tags">
+                    <span>Web Development</span>
+                    <span>HTML/CSS</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+            <div class="modal-gallery">
+                <div class="gallery-carousel">
+                    <div class="carousel-images" id="project1Carousel">
+                        <img src="Assets/login.png" alt="Login Screen">
+                        <img src="Assets/register.png" alt="Register Screen">
+                        <img src="Assets/landingpage.png" alt="Landing Page">
+                    </div>
+                    <button class="carousel-prev" onclick="changeSlide(-1, 'project1')">&lt;</button>
+                    <button class="carousel-next" onclick="changeSlide(1, 'project1')">&gt;</button>
+                </div>
+            </div>
+            <div class="modal-description">
+                <p>Pada semester 3 tahun 2023, saya mengembangkan dua proyek berbasis web: Finance Tracker App, aplikasi untuk mencatat transaksi, memantau keuangan, dan menampilkan grafik analisis; serta Simple Login System, sistem autentikasi pengguna dengan validasi input dan antarmuka intuitif. Proyek ini dibangun menggunakan HTML, CSS, dan JavaScript, mencerminkan keahlian saya dalam pengembangan web dan desain antarmuka responsif.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-modal" id="project2Modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeProjectModal('project2')">&times;</span>
+            <div class="modal-header">
+                <h2>Cinema Ticket Booking System</h2>
+                <div class="modal-tags">
+                    <span>Python</span>
+                    <span>Tkinter</span>
+                    <span>GUI Application</span>
+                </div>
+            </div>
+            <div class="modal-gallery">
+                <div class="gallery-carousel">
+                    <div class="carousel-images" id="project2Carousel">
+                        <img src="Assets/landingpagebioskop.png" alt="Landing Page">
+                        <img src="Assets/menupembyaran.png" alt="Payment Screen">
+                        <img src="Assets/struk.png" alt="Receipt">
+                        <img src="Assets/Flowchart-1.png" alt="Flowchart">
+                    </div>
+                    <button class="carousel-prev" onclick="changeSlide(-1, 'project2')">&lt;</button>
+                    <button class="carousel-next" onclick="changeSlide(1, 'project2')">&gt;</button>
+                </div>
+            </div>
+            <div class="modal-description">
+                <p>Pada semester 2, saya bersama tim mengembangkan Bioskop Kawaii, sebuah aplikasi berbasis GUI menggunakan Python (Tkinter dan PIL). Aplikasi ini mempermudah pemesanan tiket bioskop dengan fitur seperti pemilihan kursi interaktif, jadwal tayang, dan pembayaran digital. Proyek ini dirancang untuk memberikan pengalaman pemesanan tiket yang efisien dan intuitif.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="project-modal" id="project3Modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeProjectModal('project3')">&times;</span>
+            <div class="modal-header">
+                <h2>Database and Management with Microsoft Access <h2>
+                <div class="modal-tags">
+                    <span>Basis Data</span>
+                    <span>Microsoft Access</span>
+                    <span>Sistem Manajemen Informasi</span>
+                </div>
+            </div>
+            <div class="modal-gallery">
+                <div class="gallery-carousel">
+                    <div class="carousel-images" id="project3Carousel">
+                        <img src="Assets/sim1.png" alt="Foto 1">
+                        <img src="Assets/sim2.png" alt="Foto 2">
+                        <img src="Assets/sim3.png" alt="Foto 3">
+                        <img src="Assets/sim4.png" alt="Foto 4">
+                        <img src="Assets/sim5.png" alt="Foto 5">
+                        <img src="Assets/sim6.png" alt="Foto 6">
+                    </div>
+                    <button class="carousel-prev" onclick="changeSlide(-1, 'project3')">&lt;</button>
+                    <button class="carousel-next" onclick="changeSlide(1, 'project3')">&gt;</button>
+                </div>
+            </div>
+            <div class="modal-description">
+                <p>Proyek ini berfokus pada pembuatan basis data menggunakan Microsoft Access untuk mendukung sistem informasi manajemen. Dalam proyek ini, saya merancang tabel, relasi antar entitas, serta fitur-fitur seperti formulir input, laporan, dan kueri untuk pengambilan data. Proyek ini bertujuan untuk meningkatkan efisiensi pengelolaan data dalam organisasi atau sistem, dengan memastikan akurasi dan kemudahan akses informasi.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-modal" id="project4Modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeProjectModal('project4')">&times;</span>
+            <div class="modal-header">
+                <h2>Mental Healthcare Platform : End-to-End Development <h2>
+                <div class="modal-tags">
+                    <span>Web Development </span>
+                    <span>UI/UX Design</span>
+                    <span>Prototype Testing</span>
+                </div>
+            </div>
+            <div class="modal-gallery">
+                <div class="gallery-carousel">
+                    <div class="carousel-images" id="project4Carousel">
+                        <img src="Assets/wix (1).png" alt="Foto 1">
+                        <img src="Assets/wix (2).png" alt="Foto 2">
+                        <img src="Assets/wix (3).png" alt="Foto 3">
+                        <img src="Assets/wix (4).png" alt="Foto 4">
+                        <img src="Assets/wix (5).png" alt="Foto 5">
+                    </div>
+                    <button class="carousel-prev" onclick="changeSlide(-1, 'project4')">&lt;</button>
+                    <button class="carousel-next" onclick="changeSlide(1, 'project4')">&gt;</button>
+                </div>
+            </div>
+            <div class="modal-description">
+                <p>Proyek ini melibatkan pengembangan dan pengujian platform berbasis web yang bertujuan untuk menyediakan layanan kesehatan mental. Fitur utama mencakup konsultasi daring dengan profesional, artikel kesehatan mental, dan direktori layanan kesehatan mental. Melalui usability testing menggunakan prototipe berbasis Wix, proyek ini memastikan pengalaman pengguna yang optimal dalam navigasi, desain, dan efisiensi fitur. Dengan hasil evaluasi positif dari pengguna, proyek ini berhasil memberikan solusi inovatif untuk mendukung akses layanan kesehatan mental.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-modal" id="project5Modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeProjectModal('project5')">&times;</span>
+            <div class="modal-header">
+                <h2>Smart Data Filtering for Web-Based Information System<h2>
+                <div class="modal-tags">
+                    <span>Web Development </span>
+                    <span>Database Management</span>
+                    <span>Filtering System</span>
+                </div>
+            </div>
+            <div class="modal-gallery">
+                <div class="gallery-carousel">
+                    <div class="carousel-images" id="project5Carousel">
+                        <img src="Assets/wix (1).png" alt="Foto 1">
+                        <img src="Assets/wix (2).png" alt="Foto 2">
+                        <img src="Assets/wix (3).png" alt="Foto 3">
+                        <img src="Assets/wix (4).png" alt="Foto 4">
+                        <img src="Assets/wix (5).png" alt="Foto 5">
+                    </div>
+                    <button class="carousel-prev" onclick="changeSlide(-1, 'project5')">&lt;</button>
+                    <button class="carousel-next" onclick="changeSlide(1, 'project5')">&gt;</button>
+                </div>
+            </div>
+            <div class="modal-description">
+                <p>Mengembangkan sistem informasi berbasis web sebagai bagian dari proyek mata kuliah Desain Basis Data. Sistem ini memungkinkan pengguna untuk melihat dan memfilter data teman yang dikategorikan, seperti 'Teman Belajar,' 'Teman Bermain Game,' dan lainnya. Dibangun menggunakan PHP, MySQL, HTML, dan CSS, proyek ini dilengkapi dengan halaman depan yang ramah pengguna, pemfilteran berbasis kategori menggunakan SQL join, dan antarmuka yang responsif. Proses pengembangan mencakup desain skema basis data, integrasi backend, serta pengujian dan debugging yang intensif untuk memastikan kinerja yang optimal.</p>
+            </div>
+        </div>
+    </div>
+
+
+            <div class="modal-description">
+                <p>    <div class="project-modal" id="project6Modal">
+                    <div class="modal-content">
+                        <span class="close-modal" onclick="closeProjectModal('project6')">&times;</span>
+                        <div class="modal-header">
+                            <h2>Photography<h2>
+                            <div class="modal-tags">
+                                <span>Visual Storytelling</span>
+                                <span>Branding & Marketing</span>
+                                <span>Creative Photography</span>
+                            </div>
+                        </div>
+                        <div class="modal-gallery">
+                            <div class="gallery-carousel">
+                                <div class="carousel-images" id="project6Carousel">
+                                    <img src="Assets/foto1.jpg" alt="Foto 1">
+                                    <img src="Assets/foto2.jpg" alt="Foto 2">
+                                    <img src="Assets/foto3.jpg" alt="Foto 3">
+                                    <img src="Assets/foto4.jpg" alt="Foto 4">
+                                    <img src="Assets/foto5.jpg" alt="Foto 5">
+                                    <img src="Assets/foto6.png" alt="Foto 6">
+
+                                </div>
+                                <button class="carousel-prev" onclick="changeSlide(-1, 'project6')">&lt;</button>
+                                <button class="carousel-next" onclick="changeSlide(1, 'project6')">&gt;</button>
+                            </div>
+                        </div>
+                        <div class="modal-description">
+                            <p>Saya memiliki pengalaman dalam berbagai jenis fotografi, termasuk portrait, landscape, produk, dan street photography. Dengan keahlian ini, saya mampu menangkap momen secara estetik dan bermakna, baik untuk keperluan pribadi maupun profesional.
+
+                                Saya juga aktif mengikuti berbagai kompetisi fotografi, yang semakin mengasah kemampuan saya dalam komposisi, pencahayaan, dan teknik fotografi lainnya. Selain sebagai bentuk ekspresi seni, saya percaya bahwa fotografi memiliki peran penting dalam dunia bisnis. Oleh karena itu, saya menghadirkan hasil foto yang dapat membantu perusahaan dalam branding, pemasaran produk, serta pembuatan konten visual berkualitas untuk berbagai platform digital dan cetak.
+                                
+                                Baik untuk keperluan komersial maupun dokumentasi profesional, saya selalu berkomitmen untuk menghasilkan karya terbaik yang sesuai dengan kebutuhan klien dan industri.</p>
+                        </div>
+                    </div>
+                </div></p>
+            </div>
+        </div>
+    </div>
+    <!-- Add other project modals here with similar structure -->
+
+    <script>
+        // Toggle mobile menu
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        // Current slide tracking for each project
+        const currentSlides = {
+            project1: 0,
+            project2: 0,
+            project3: 0,
+            project4: 0,
+            project5: 0,
+            project6: 0,
+            project7: 0,
+            project8: 0
+        };
+
+        // Open project modal
+        function openProjectModal(projectId) {
+            document.getElementById(projectId + 'Modal').style.display = 'flex';
+            document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+            updateCarousel(projectId);
+        }
+
+        // Close project modal
+        function closeProjectModal(projectId) {
+            document.getElementById(projectId + 'Modal').style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restore scrolling
+        }
+
+        // Change slide
+        function changeSlide(direction, projectId) {
+            const carousel = document.getElementById(projectId + 'Carousel');
+            const slides = carousel.getElementsByTagName('img');
+            
+            currentSlides[projectId] += direction;
+            
+            if (currentSlides[projectId] >= slides.length) {
+                currentSlides[projectId] = 0;
+            }
+            
+            if (currentSlides[projectId] < 0) {
+                currentSlides[projectId] = slides.length - 1;
+            }
+            
+            updateCarousel(projectId);
+        }
+
+        // Update carousel display
+        function updateCarousel(projectId) {
+            const carousel = document.getElementById(projectId + 'Carousel');
+            const slides = carousel.getElementsByTagName('img');
+            
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+            
+            slides[currentSlides[projectId]].style.display = 'block';
+        }
+    </script>
+</body>
+</html>
