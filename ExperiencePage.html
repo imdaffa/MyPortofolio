@@ -31,11 +31,11 @@
             <div class="section-title">
                 <h1>My <span>Portfolio</span></h1>
                 <div class="underline"></div>
-                <p class="section-subtitle">Check out some of my recent projects</p>
+                <p class="section-subtitle">Comprehensive projects showcasing web development, mobile apps, databases, and IoT solutions</p>
             </div>
 
             <div class="portfolio-grid">
-                <!-- Project 1 -->
+                <!-- Project 1 - Finance Tracker -->
                 <div class="portfolio-item" onclick="openProjectModal('project1')">
                     <div class="portfolio-image">
                         <img src="Assets/FinanceTracker.png" alt="Finance Tracker Project">
@@ -48,81 +48,126 @@
                     </div>
                 </div>
 
-                <!-- Project 2 -->
+                <!-- Project 2 - Cinema Booking -->
                 <div class="portfolio-item" onclick="openProjectModal('project2')">
                     <div class="portfolio-image">
                         <img src="Assets/CinemaBookTicket.png" alt="Cinema Booking System">
                         <div class="overlay">
                             <div class="overlay-content">
                                 <h3>Cinema Booking System</h3>
-                                <p>Python Application</p>
+                                <p>Python GUI Application</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 3 -->
+                <!-- Project 3 - Database Management -->
                 <div class="portfolio-item" onclick="openProjectModal('project3')">
                     <div class="portfolio-image">
                         <img src="Assets/MsAccessDatabase.png" alt="Database Design">
                         <div class="overlay">
                             <div class="overlay-content">
-                                <h3>Database Design</h3>
-                                <p>Microsoft Access</p>
+                                <h3>Database Management System</h3>
+                                <p>Microsoft Access & MySQL</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 4 -->
+                <!-- Project 4 - Mental Health Platform -->
                 <div class="portfolio-item" onclick="openProjectModal('project4')">
                     <div class="portfolio-image">
                         <img src="Assets/MentalHealtEdevelop.png" alt="Mental Healthcare Platform">
                         <div class="overlay">
                             <div class="overlay-content">
                                 <h3>Mental Healthcare Platform</h3>
-                                <p>Web Development</p>
+                                <p>Web Development & UI/UX</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 5 -->
+                <!-- Project 5 - Android Application -->
                 <div class="portfolio-item" onclick="openProjectModal('project5')">
                     <div class="portfolio-image">
-                        <img src="Assets/MySQL.png" alt="Friend Database System">
+                        <img src="Assets/AndroidApp.png" alt="Android Application">
                         <div class="overlay">
                             <div class="overlay-content">
-                                <h3>Friend Database System</h3>
-                                <p>Web Application</p>
+                                <h3>Android Mobile App</h3>
+                                <p>Mobile Development</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 6 -->
+                <!-- Project 6 - E-Commerce -->
                 <div class="portfolio-item" onclick="openProjectModal('project6')">
                     <div class="portfolio-image">
-                        <img src="Assets/Photography.png" alt="Photography">
+                        <img src="Assets/Ecommerce.png" alt="E-Commerce Platform">
                         <div class="overlay">
                             <div class="overlay-content">
-                                <h3>Photography</h3>
-                                <p>Creative Work</p>
+                                <h3>E-Commerce Platform</h3>
+                                <p>Online Store Development</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Project 7 - IoT Smart Agriculture -->
+                <div class="portfolio-item" onclick="openProjectModal('project7')">
+                    <div class="portfolio-image">
+                        <img src="Assets/IoTAgriculture.png" alt="IoT Smart Agriculture">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>IoT Smart Agriculture</h3>
+                                <p>Internet of Things</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8 - Crowdfunding Platform -->
+                <div class="portfolio-item" onclick="openProjectModal('project8')">
+                    <div class="portfolio-image">
+                        <img src="Assets/Crowdfunding.png" alt="Crowdfunding Platform">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Crowdfunding Platform</h3>
+                                <p>Full-Stack Development</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 9 - Bookshop System -->
+                <div class="portfolio-item" onclick="openProjectModal('project9')">
+                    <div class="portfolio-image">
+                        <img src="Assets/BookShop.png" alt="Bookshop System">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>BookShop Management</h3>
+                                <p>Backend & Frontend</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
     <!-- Project Modals -->
+    
+    <!-- Modal 1 - Finance Tracker -->
     <div class="project-modal" id="project1Modal">
         <div class="modal-content">
             <span class="close-modal" onclick="closeProjectModal('project1')">&times;</span>
             <div class="modal-header">
                 <h2>Finance Tracker Application</h2>
                 <div class="modal-tags">
-                    <span>Web Development</span>
-                    <span>HTML/CSS</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
                     <span>JavaScript</span>
+                    <span>Web Development</span>
                 </div>
             </div>
             <div class="modal-gallery">
@@ -137,11 +182,12 @@
                 </div>
             </div>
             <div class="modal-description">
-                <p>Pada semester 3 tahun 2023, saya mengembangkan dua proyek berbasis web: Finance Tracker App, aplikasi untuk mencatat transaksi, memantau keuangan, dan menampilkan grafik analisis; serta Simple Login System, sistem autentikasi pengguna dengan validasi input dan antarmuka intuitif. Proyek ini dibangun menggunakan HTML, CSS, dan JavaScript, mencerminkan keahlian saya dalam pengembangan web dan desain antarmuka responsif.</p>
+                <p>Aplikasi web untuk mengelola keuangan pribadi yang dikembangkan menggunakan HTML, CSS, dan JavaScript. Fitur utama meliputi pencatatan transaksi, monitoring pengeluaran dan pemasukan, serta visualisasi data dalam bentuk grafik. Aplikasi ini dilengkapi dengan sistem autentikasi pengguna dan interface yang responsif untuk berbagai perangkat.</p>
             </div>
         </div>
     </div>
 
+    <!-- Modal 2 - Cinema Booking -->
     <div class="project-modal" id="project2Modal">
         <div class="modal-content">
             <span class="close-modal" onclick="closeProjectModal('project2')">&times;</span>
@@ -150,7 +196,8 @@
                 <div class="modal-tags">
                     <span>Python</span>
                     <span>Tkinter</span>
-                    <span>GUI Application</span>
+                    <span>PIL</span>
+                    <span>GUI Development</span>
                 </div>
             </div>
             <div class="modal-gallery">
@@ -166,144 +213,229 @@
                 </div>
             </div>
             <div class="modal-description">
-                <p>Pada semester 2, saya bersama tim mengembangkan Bioskop Kawaii, sebuah aplikasi berbasis GUI menggunakan Python (Tkinter dan PIL). Aplikasi ini mempermudah pemesanan tiket bioskop dengan fitur seperti pemilihan kursi interaktif, jadwal tayang, dan pembayaran digital. Proyek ini dirancang untuk memberikan pengalaman pemesanan tiket yang efisien dan intuitif.</p>
+                <p>Aplikasi desktop "Bioskop Kawaii" yang dikembangkan dengan Python menggunakan Tkinter untuk GUI dan PIL untuk pengolahan gambar. Sistem ini menyediakan fitur pemilihan kursi interaktif, jadwal tayang film, sistem pembayaran digital, dan cetak struk otomatis untuk memberikan pengalaman pemesanan tiket yang mudah dan efisien.</p>
             </div>
         </div>
     </div>
 
-
+    <!-- Modal 3 - Database Management -->
     <div class="project-modal" id="project3Modal">
         <div class="modal-content">
             <span class="close-modal" onclick="closeProjectModal('project3')">&times;</span>
             <div class="modal-header">
-                <h2>Database and Management with Microsoft Access <h2>
+                <h2>Database Management Systems</h2>
                 <div class="modal-tags">
-                    <span>Basis Data</span>
                     <span>Microsoft Access</span>
-                    <span>Sistem Manajemen Informasi</span>
+                    <span>MySQL</span>
+                    <span>PHP</span>
+                    <span>Database Design</span>
                 </div>
             </div>
             <div class="modal-gallery">
                 <div class="gallery-carousel">
                     <div class="carousel-images" id="project3Carousel">
-                        <img src="Assets/sim1.png" alt="Foto 1">
-                        <img src="Assets/sim2.png" alt="Foto 2">
-                        <img src="Assets/sim3.png" alt="Foto 3">
-                        <img src="Assets/sim4.png" alt="Foto 4">
-                        <img src="Assets/sim5.png" alt="Foto 5">
-                        <img src="Assets/sim6.png" alt="Foto 6">
+                        <img src="Assets/sim1.png" alt="Database Schema">
+                        <img src="Assets/sim2.png" alt="Forms Interface">
+                        <img src="Assets/sim3.png" alt="Reports">
+                        <img src="Assets/sim4.png" alt="Queries">
+                        <img src="Assets/sim5.png" alt="Friend Database">
+                        <img src="Assets/sim6.png" alt="MySQL Integration">
                     </div>
                     <button class="carousel-prev" onclick="changeSlide(-1, 'project3')">&lt;</button>
                     <button class="carousel-next" onclick="changeSlide(1, 'project3')">&gt;</button>
                 </div>
             </div>
             <div class="modal-description">
-                <p>Proyek ini berfokus pada pembuatan basis data menggunakan Microsoft Access untuk mendukung sistem informasi manajemen. Dalam proyek ini, saya merancang tabel, relasi antar entitas, serta fitur-fitur seperti formulir input, laporan, dan kueri untuk pengambilan data. Proyek ini bertujuan untuk meningkatkan efisiensi pengelolaan data dalam organisasi atau sistem, dengan memastikan akurasi dan kemudahan akses informasi.</p>
+                <p>Pengembangan sistem manajemen basis data menggunakan Microsoft Access dan MySQL. Proyek meliputi desain skema database, pembuatan tabel relasional, formulir input, sistem query, dan laporan. Termasuk sistem informasi pertemanan dengan kategorisasi dan filtering menggunakan PHP dan MySQL untuk aplikasi berbasis web.</p>
             </div>
         </div>
     </div>
 
+    <!-- Modal 4 - Mental Health Platform -->
     <div class="project-modal" id="project4Modal">
         <div class="modal-content">
             <span class="close-modal" onclick="closeProjectModal('project4')">&times;</span>
             <div class="modal-header">
-                <h2>Mental Healthcare Platform : End-to-End Development <h2>
+                <h2>Mental Healthcare Platform</h2>
                 <div class="modal-tags">
-                    <span>Web Development </span>
+                    <span>Web Development</span>
                     <span>UI/UX Design</span>
-                    <span>Prototype Testing</span>
+                    <span>Wix Platform</span>
+                    <span>Usability Testing</span>
                 </div>
             </div>
             <div class="modal-gallery">
                 <div class="gallery-carousel">
                     <div class="carousel-images" id="project4Carousel">
-                        <img src="Assets/wix (1).png" alt="Foto 1">
-                        <img src="Assets/wix (2).png" alt="Foto 2">
-                        <img src="Assets/wix (3).png" alt="Foto 3">
-                        <img src="Assets/wix (4).png" alt="Foto 4">
-                        <img src="Assets/wix (5).png" alt="Foto 5">
+                        <img src="Assets/wix (1).png" alt="Homepage">
+                        <img src="Assets/wix (2).png" alt="Consultation Page">
+                        <img src="Assets/wix (3).png" alt="Articles Section">
+                        <img src="Assets/wix (4).png" alt="Directory">
+                        <img src="Assets/wix (5).png" alt="User Interface">
                     </div>
                     <button class="carousel-prev" onclick="changeSlide(-1, 'project4')">&lt;</button>
                     <button class="carousel-next" onclick="changeSlide(1, 'project4')">&gt;</button>
                 </div>
             </div>
             <div class="modal-description">
-                <p>Proyek ini melibatkan pengembangan dan pengujian platform berbasis web yang bertujuan untuk menyediakan layanan kesehatan mental. Fitur utama mencakup konsultasi daring dengan profesional, artikel kesehatan mental, dan direktori layanan kesehatan mental. Melalui usability testing menggunakan prototipe berbasis Wix, proyek ini memastikan pengalaman pengguna yang optimal dalam navigasi, desain, dan efisiensi fitur. Dengan hasil evaluasi positif dari pengguna, proyek ini berhasil memberikan solusi inovatif untuk mendukung akses layanan kesehatan mental.</p>
+                <p>Platform kesehatan mental berbasis web yang menyediakan layanan konsultasi online, artikel edukatif, dan direktori profesional kesehatan mental. Dikembangkan dengan fokus pada user experience, dilengkapi usability testing untuk memastikan navigasi yang intuitif dan desain yang user-friendly untuk mendukung aksesibilitas layanan kesehatan mental.</p>
             </div>
         </div>
     </div>
 
+    <!-- Modal 5 - Android Application -->
     <div class="project-modal" id="project5Modal">
         <div class="modal-content">
             <span class="close-modal" onclick="closeProjectModal('project5')">&times;</span>
             <div class="modal-header">
-                <h2>Smart Data Filtering for Web-Based Information System<h2>
+                <h2>Android Mobile Application</h2>
                 <div class="modal-tags">
-                    <span>Web Development </span>
-                    <span>Database Management</span>
-                    <span>Filtering System</span>
+                    <span>Android Studio</span>
+                    <span>Java/Kotlin</span>
+                    <span>Mobile Development</span>
+                    <span>CRUD Operations</span>
                 </div>
             </div>
             <div class="modal-gallery">
                 <div class="gallery-carousel">
                     <div class="carousel-images" id="project5Carousel">
-                        <img src="Assets/wix (1).png" alt="Foto 1">
-                        <img src="Assets/wix (2).png" alt="Foto 2">
-                        <img src="Assets/wix (3).png" alt="Foto 3">
-                        <img src="Assets/wix (4).png" alt="Foto 4">
-                        <img src="Assets/wix (5).png" alt="Foto 5">
+                        <img src="Assets/android1.png" alt="App Interface">
+                        <img src="Assets/android2.png" alt="CRUD Features">
+                        <img src="Assets/android3.png" alt="User Management">
                     </div>
                     <button class="carousel-prev" onclick="changeSlide(-1, 'project5')">&lt;</button>
                     <button class="carousel-next" onclick="changeSlide(1, 'project5')">&gt;</button>
                 </div>
             </div>
             <div class="modal-description">
-                <p>Mengembangkan sistem informasi berbasis web sebagai bagian dari proyek mata kuliah Desain Basis Data. Sistem ini memungkinkan pengguna untuk melihat dan memfilter data teman yang dikategorikan, seperti 'Teman Belajar,' 'Teman Bermain Game,' dan lainnya. Dibangun menggunakan PHP, MySQL, HTML, dan CSS, proyek ini dilengkapi dengan halaman depan yang ramah pengguna, pemfilteran berbasis kategori menggunakan SQL join, dan antarmuka yang responsif. Proses pengembangan mencakup desain skema basis data, integrasi backend, serta pengujian dan debugging yang intensif untuk memastikan kinerja yang optimal.</p>
+                <p>Aplikasi mobile Android yang dikembangkan menggunakan Android Studio dengan implementasi operasi CRUD (Create, Read, Update, Delete). Aplikasi ini mendemonstrasikan kemampuan dalam pengembangan mobile native dengan fitur manajemen data yang komprehensif dan interface yang user-friendly.</p>
             </div>
         </div>
     </div>
 
-
-            <div class="modal-description">
-                <p>    <div class="project-modal" id="project6Modal">
-                    <div class="modal-content">
-                        <span class="close-modal" onclick="closeProjectModal('project6')">&times;</span>
-                        <div class="modal-header">
-                            <h2>Photography<h2>
-                            <div class="modal-tags">
-                                <span>Visual Storytelling</span>
-                                <span>Branding & Marketing</span>
-                                <span>Creative Photography</span>
-                            </div>
-                        </div>
-                        <div class="modal-gallery">
-                            <div class="gallery-carousel">
-                                <div class="carousel-images" id="project6Carousel">
-                                    <img src="Assets/foto1.jpg" alt="Foto 1">
-                                    <img src="Assets/foto2.jpg" alt="Foto 2">
-                                    <img src="Assets/foto3.jpg" alt="Foto 3">
-                                    <img src="Assets/foto4.jpg" alt="Foto 4">
-                                    <img src="Assets/foto5.jpg" alt="Foto 5">
-                                    <img src="Assets/foto6.png" alt="Foto 6">
-
-                                </div>
-                                <button class="carousel-prev" onclick="changeSlide(-1, 'project6')">&lt;</button>
-                                <button class="carousel-next" onclick="changeSlide(1, 'project6')">&gt;</button>
-                            </div>
-                        </div>
-                        <div class="modal-description">
-                            <p>Saya memiliki pengalaman dalam berbagai jenis fotografi, termasuk portrait, landscape, produk, dan street photography. Dengan keahlian ini, saya mampu menangkap momen secara estetik dan bermakna, baik untuk keperluan pribadi maupun profesional.
-
-                                Saya juga aktif mengikuti berbagai kompetisi fotografi, yang semakin mengasah kemampuan saya dalam komposisi, pencahayaan, dan teknik fotografi lainnya. Selain sebagai bentuk ekspresi seni, saya percaya bahwa fotografi memiliki peran penting dalam dunia bisnis. Oleh karena itu, saya menghadirkan hasil foto yang dapat membantu perusahaan dalam branding, pemasaran produk, serta pembuatan konten visual berkualitas untuk berbagai platform digital dan cetak.
-                                
-                                Baik untuk keperluan komersial maupun dokumentasi profesional, saya selalu berkomitmen untuk menghasilkan karya terbaik yang sesuai dengan kebutuhan klien dan industri.</p>
-                        </div>
+    <!-- Modal 6 - E-Commerce -->
+    <div class="project-modal" id="project6Modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeProjectModal('project6')">&times;</span>
+            <div class="modal-header">
+                <h2>E-Commerce Online Store</h2>
+                <div class="modal-tags">
+                    <span>Web Development</span>
+                    <span>E-Commerce</span>
+                    <span>Payment Gateway</span>
+                    <span>Database Integration</span>
+                </div>
+            </div>
+            <div class="modal-gallery">
+                <div class="gallery-carousel">
+                    <div class="carousel-images" id="project6Carousel">
+                        <img src="Assets/ecom1.png" alt="Store Homepage">
+                        <img src="Assets/ecom2.png" alt="Product Catalog">
+                        <img src="Assets/ecom3.png" alt="Shopping Cart">
+                        <img src="Assets/ecom4.png" alt="Payment Process">
                     </div>
-                </div></p>
+                    <button class="carousel-prev" onclick="changeSlide(-1, 'project6')">&lt;</button>
+                    <button class="carousel-next" onclick="changeSlide(1, 'project6')">&gt;</button>
+                </div>
+            </div>
+            <div class="modal-description">
+                <p>Platform e-commerce lengkap dengan fitur katalog produk, sistem keranjang belanja, proses checkout, dan integrasi payment gateway. Dibangun dengan teknologi web modern dan database management system untuk mendukung operasional toko online yang efisien dan aman.</p>
             </div>
         </div>
     </div>
-    <!-- Add other project modals here with similar structure -->
+
+    <!-- Modal 7 - IoT Smart Agriculture -->
+    <div class="project-modal" id="project7Modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeProjectModal('project7')">&times;</span>
+            <div class="modal-header">
+                <h2>IoT Smart Agriculture System</h2>
+                <div class="modal-tags">
+                    <span>IoT</span>
+                    <span>Arduino</span>
+                    <span>Web Interface</span>
+                    <span>Sensors</span>
+                </div>
+            </div>
+            <div class="modal-gallery">
+                <div class="gallery-carousel">
+                    <div class="carousel-images" id="project7Carousel">
+                        <img src="Assets/iot1.png" alt="IoT Dashboard">
+                        <img src="Assets/iot2.png" alt="Sensor Data">
+                        <img src="Assets/iot3.png" alt="Control Interface">
+                        <img src="Assets/iot4.png" alt="Hardware Setup">
+                    </div>
+                    <button class="carousel-prev" onclick="changeSlide(-1, 'project7')">&lt;</button>
+                    <button class="carousel-next" onclick="changeSlide(1, 'project7')">&gt;</button>
+                </div>
+            </div>
+            <div class="modal-description">
+                <p>Sistem pertanian pintar berbasis IoT yang mengintegrasikan sensor untuk monitoring kelembaban tanah, suhu, dan kondisi lingkungan. Dilengkapi dengan dashboard berbasis web untuk monitoring real-time dan kontrol otomatis sistem irigasi. Menggunakan Arduino dan teknologi web untuk menciptakan solusi pertanian modern.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 8 - Crowdfunding Platform -->
+    <div class="project-modal" id="project8Modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeProjectModal('project8')">&times;</span>
+            <div class="modal-header">
+                <h2>Crowdfunding Web Platform</h2>
+                <div class="modal-tags">
+                    <span>Full-Stack</span>
+                    <span>Web Development</span>
+                    <span>Payment System</span>
+                    <span>User Management</span>
+                </div>
+            </div>
+            <div class="modal-gallery">
+                <div class="gallery-carousel">
+                    <div class="carousel-images" id="project8Carousel">
+                        <img src="Assets/crowd1.png" alt="Platform Homepage">
+                        <img src="Assets/crowd2.png" alt="Project Listing">
+                        <img src="Assets/crowd3.png" alt="Funding Interface">
+                        <img src="Assets/crowd4.png" alt="User Dashboard">
+                    </div>
+                    <button class="carousel-prev" onclick="changeSlide(-1, 'project8')">&lt;</button>
+                    <button class="carousel-next" onclick="changeSlide(1, 'project8')">&gt;</button>
+                </div>
+            </div>
+            <div class="modal-description">
+                <p>Platform crowdfunding berbasis web yang memungkinkan pengguna untuk membuat dan mendanai proyek. Fitur meliputi manajemen proyek, sistem pembayaran, tracking progress, dan dashboard user. Dikembangkan dengan arsitektur full-stack yang scalable dan secure.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 9 - Bookshop System -->
+    <div class="project-modal" id="project9Modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeProjectModal('project9')">&times;</span>
+            <div class="modal-header">
+                <h2>BookShop Management System</h2>
+                <div class="modal-tags">
+                    <span>Backend Development</span>
+                    <span>Frontend Development</span>
+                    <span>Database Management</span>
+                    <span>API Integration</span>
+                </div>
+            </div>
+            <div class="modal-gallery">
+                <div class="gallery-carousel">
+                    <div class="carousel-images" id="project9Carousel">
+                        <img src="Assets/book1.png" alt="Bookshop Interface">
+                        <img src="Assets/book2.png" alt="Inventory Management">
+                        <img src="Assets/book3.png" alt="Sales Dashboard">
+                        <img src="Assets/book4.png" alt="Customer Management">
+                    </div>
+                    <button class="carousel-prev" onclick="changeSlide(-1, 'project9')">&lt;</button>
+                    <button class="carousel-next" onclick="changeSlide(1, 'project9')">&gt;</button>
+                </div>
+            </div>
+            <div class="modal-description">
+                <p>Sistem manajemen toko buku komprehensif dengan pengembangan backend dan frontend. Mencakup manajemen inventori, sistem point of sale, tracking penjualan, dan manajemen customer. Dibangun dengan arsitektur yang terpisah antara backend API dan frontend interface untuk fleksibilitas dan maintainability.</p>
+            </div>
+        </div>
+    </div>
 
     <script>
         // Toggle mobile menu
@@ -321,20 +453,21 @@
             project5: 0,
             project6: 0,
             project7: 0,
-            project8: 0
+            project8: 0,
+            project9: 0
         };
 
         // Open project modal
         function openProjectModal(projectId) {
             document.getElementById(projectId + 'Modal').style.display = 'flex';
-            document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+            document.body.style.overflow = 'hidden';
             updateCarousel(projectId);
         }
 
         // Close project modal
         function closeProjectModal(projectId) {
             document.getElementById(projectId + 'Modal').style.display = 'none';
-            document.body.style.overflow = 'auto'; // Restore scrolling
+            document.body.style.overflow = 'auto';
         }
 
         // Change slide
@@ -365,6 +498,17 @@
             }
             
             slides[currentSlides[projectId]].style.display = 'block';
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modals = document.getElementsByClassName('project-modal');
+            for (let i = 0; i < modals.length; i++) {
+                if (event.target == modals[i]) {
+                    modals[i].style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            }
         }
     </script>
 </body>
