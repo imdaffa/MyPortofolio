@@ -1,0 +1,47 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#1a1a2e"/>
+  
+  <!-- Cinema seats -->
+  <g transform="translate(100, 120)">
+    <!-- Row 1 -->
+    <rect x="0" y="0" width="20" height="20" fill="#4CAF50" rx="3"/>
+    <rect x="30" y="0" width="20" height="20" fill="#4CAF50" rx="3"/>
+    <rect x="60" y="0" width="20" height="20" fill="#666" rx="3"/>
+    <rect x="90" y="0" width="20" height="20" fill="#4CAF50" rx="3"/>
+    <rect x="120" y="0" width="20" height="20" fill="#4CAF50" rx="3"/>
+    <rect x="150" y="0" width="20" height="20" fill="#666" rx="3"/>
+    <rect x="180" y="0" width="20" height="20" fill="#4CAF50" rx="3"/>
+    
+    <!-- Row 2 -->
+    <rect x="0" y="30" width="20" height="20" fill="#666" rx="3"/>
+    <rect x="30" y="30" width="20" height="20" fill="#FF5722" rx="3"/>
+    <rect x="60" y="30" width="20" height="20" fill="#FF5722" rx="3"/>
+    <rect x="90" y="30" width="20" height="20" fill="#FF5722" rx="3"/>
+    <rect x="120" y="30" width="20" height="20" fill="#666" rx="3"/>
+    <rect x="150" y="30" width="20" height="20" fill="#4CAF50" rx="3"/>
+    <rect x="180" y="30" width="20" height="20" fill="#4CAF50" rx="3"/>
+    
+    <!-- Row 3 -->
+    <rect x="0" y="60" width="20" height="20" fill="#4CAF50" rx="3"/>
+    <rect x="30" y="60" width="20" height="20" fill="#4CAF50" rx="3"/>
+    <rect x="60" y="60" width="20" height="20" fill="#4CAF50" rx="3"/>
+    <rect x="90" y="60" width="20" height="20" fill="#666" rx="3"/>
+    <rect x="120" y="60" width="20" height="20" fill="#4CAF50" rx="3"/>
+    <rect x="150" y="60" width="20" height="20" fill="#4CAF50" rx="3"/>
+    <rect x="180" y="60" width="20" height="20" fill="#4CAF50" rx="3"/>
+  </g>
+  
+  <!-- Screen -->
+  <rect x="120" y="90" width="160" height="8" fill="#FFF" rx="4"/>
+  
+  <!-- Film strip -->
+  <rect x="320" y="80" width="30" height="140" fill="#2196F3" rx="3"/>
+  <rect x="325" y="90" width="20" height="15" fill="#1a1a2e"/>
+  <rect x="325" y="115" width="20" height="15" fill="#1a1a2e"/>
+  <rect x="325" y="140" width="20" height="15" fill="#1a1a2e"/>
+  <rect x="325" y="165" width="20" height="15" fill="#1a1a2e"/>
+  <rect x="325" y="190" width="20" height="15" fill="#1a1a2e"/>
+  
+  <!-- Title -->
+  <text x="200" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff">Cinema Booking</text>
+</svg>

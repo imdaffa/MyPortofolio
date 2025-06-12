@@ -1,0 +1,57 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#1a1a2e"/>
+  
+  <!-- Plants -->
+  <g transform="translate(80, 160)">
+    <!-- Plant 1 -->
+    <rect x="0" y="40" width="3" height="30" fill="#8BC34A"/>
+    <ellipse cx="1.5" cy="40" rx="8" ry="12" fill="#4CAF50"/>
+    
+    <!-- Plant 2 -->
+    <rect x="30" y="35" width="3" height="35" fill="#8BC34A"/>
+    <ellipse cx="31.5" cy="35" rx="10" ry="15" fill="#4CAF50"/>
+    
+    <!-- Plant 3 -->
+    <rect x="60" y="45" width="3" height="25" fill="#8BC34A"/>
+    <ellipse cx="61.5" cy="45" rx="7" ry="10" fill="#4CAF50"/>
+  </g>
+  
+  <!-- Soil -->
+  <rect x="50" y="230" width="150" height="20" fill="#8D6E63" rx="3"/>
+  
+  <!-- IoT Sensors -->
+  <g transform="translate(220, 140)">
+    <!-- Sensor 1 - Temperature -->
+    <rect x="0" y="0" width="25" height="15" fill="#FF9800" rx="3"/>
+    <circle cx="12.5" cy="7.5" r="3" fill="#FFF"/>
+    <text x="12.5" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#FFF">TEMP</text>
+    
+    <!-- Sensor 2 - Humidity -->
+    <rect x="40" y="0" width="25" height="15" fill="#2196F3" rx="3"/>
+    <path d="M52.5,12 C50,10 50,5 52.5,3 C55,5 55,10 52.5,12 Z" fill="#FFF"/>
+    <text x="52.5" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#FFF">HUM</text>
+    
+    <!-- Sensor 3 - Soil -->
+    <rect x="80" y="0" width="25" height="15" fill="#795548" rx="3"/>
+    <rect x="87" y="4" width="11" height="7" fill="#FFF" rx="1"/>
+    <text x="92.5" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#FFF">SOIL</text>
+  </g>
+  
+  <!-- WiFi/Connection signals -->
+  <g transform="translate(280, 100)">
+    <path d="M0,20 Q10,10 20,20" stroke="#4CAF50" stroke-width="2" fill="none"/>
+    <path d="M3,17 Q10,12 17,17" stroke="#4CAF50" stroke-width="2" fill="none"/>
+    <path d="M6,14 Q10,12 14,14" stroke="#4CAF50" stroke-width="2" fill="none"/>
+    <circle cx="10" cy="14" r="1" fill="#4CAF50"/>
+  </g>
+  
+  <!-- Water drops -->
+  <g transform="translate(120, 120)">
+    <path d="M0,10 C-2,5 -2,2 0,0 C2,2 2,5 0,10 Z" fill="#2196F3" opacity="0.7"/>
+    <path d="M20,15 C18,10 18,7 20,5 C22,7 22,10 20,15 Z" fill="#2196F3" opacity="0.7"/>
+    <path d="M40,12 C38,7 38,4 40,2 C42,4 42,7 40,12 Z" fill="#2196F3" opacity="0.7"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff">IoT Smart Agriculture</text>
+</svg>
