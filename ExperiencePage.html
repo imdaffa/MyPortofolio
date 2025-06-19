@@ -126,6 +126,19 @@
                     </div>
                 </div>
 
+                    <!-- Project 9 - Data Teman Web App -->
+                <div class="portfolio-item" onclick="openProjectModal('project9')">
+                    <div class="portfolio-image">
+                        <img src="Assets/mysql_connection_thumbnail.svg" alt="Data Teman Web App">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Data Teman Web App</h3>
+                                <p>PHP & MySQL Based Friend List</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
     <!-- Project Modals -->
     
@@ -352,6 +365,40 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal 9 - Data Teman Web App -->
+<div class="project-modal" id="project9Modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeProjectModal('project9')">&times;</span>
+        <div class="modal-header">
+            <h2>Data Teman Web App</h2>
+            <div class="modal-tags">
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>Database</span>
+                <span>Web Development</span>
+            </div>
+        </div>
+        <div class="modal-gallery">
+            <div class="gallery-carousel">
+                <div class="carousel-images" id="project9Carousel">
+                    <img src="Assets/mysql (1).jpg" alt="Database Connection Code">
+                    <img src="Assets/mysql (2).jpg" alt="LEFT JOIN Display">
+                    <img src="Assets/mysql (3).jpg" alt="phpMyAdmin Tables">
+                    <img src="Assets/mysql (4).jpg" alt="Main Dashboard">
+                    <img src="Assets/mysql (5).jpg" alt="Full Friend List Table">
+                    <img src="Assets/mysql (6).jpg" alt="Category Page">
+                </div>
+                <button class="carousel-prev" onclick="changeSlide(-1, 'project9')">&lt;</button>
+                <button class="carousel-next" onclick="changeSlide(1, 'project9')">&gt;</button>
+            </div>
+        </div>
+        <div class="modal-description">
+            <p>Proyek ini dikembangkan sebagai bagian dari tugas UAS semester 4. Aplikasi web ini dibuat menggunakan PHP dan MySQL untuk mengelola serta menampilkan data teman berdasarkan kategori. Saya merancang database relasional menggunakan phpMyAdmin yang terdiri dari beberapa tabel teman berdasarkan jenjang pendidikan serta kategori hubungan (game, curhat, nongkrong, dll). Website ini mendukung fitur LEFT JOIN dan INNER JOIN untuk menampilkan data terhubung antar tabel. Fitur utama termasuk filter berdasarkan kategori, tampilan tabel dinamis, dan koneksi database menggunakan PHP MySQLi. Proyek ini menunjukkan kemampuan saya dalam merancang dan mengelola database, serta membangun web app sederhana berbasis data dinamis.</p>
+        </div>
+    </div>
+</div>
+
 
     <script>
         // Toggle mobile menu
